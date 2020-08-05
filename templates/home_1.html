@@ -1,0 +1,46 @@
+<html>
+<body>
+    <h3>Loan Prediction</h3>
+
+<div>
+  <form action="/result" method="POST">
+    <br>
+    <label for="Term">Term(in Year)</label>
+    <input type="text" id="Term" name="Term">
+    <br>
+    <label for="NoEmp">Number of Business Employees</label>
+    <input type="text" id="NoEmp" name="NoEmp">
+    <br>
+    <label for="NewExist">Existing Business=1/New Business=2</label>
+    <select id="NewExist" name="NewExist">
+      <option value="1">1</option>
+      <option value="2">2</option>
+    </select>
+    <br>
+    <label for="CreateJob">Number of jobs created</label>
+    <input type="text" id="CreateJob" name="CreateJob">
+    <br>
+    <label for="RetainedJob">Number of jobs retained</label>
+    <input type="text" id="RetainedJob" name="RetainedJob">
+    <br>
+    <label for="UrbanRural">1= Urban, 2= Rural, 0 = Undefined</label>
+    <select id="UrbanRural" name="UrbanRural">
+      <option value="0">0</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+    </select>
+    <br>
+     <label for="LowDoc">LowDoc Loan Program (0= NO, 1= Yes)</label>
+    <select id="LowDoc" name="LowDoc">
+      <option value="0">0</option>
+      <option value="1">1</option>
+    </select>
+    <br>
+    <label for="GrAppv">Gross Amount of Loan Approved by Bank</label>
+    <input type="text" id="GrAppv" name="GrAppv">
+    <br>
+    <input type="submit" value="Submit">
+  </form>
+</div>
+</body>
+</html>
